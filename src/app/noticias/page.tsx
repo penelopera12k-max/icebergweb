@@ -28,14 +28,12 @@ export default function Noticias() {
     <main className="bg-white min-h-screen pt-48 pb-0 text-[#333333] font-sans">
       <div className="max-w-[1240px] mx-auto px-6">
         
-        {/* TITULACIÓN INSTITUCIONAL */}
         <div className="text-center mb-24 space-y-4">
            <h1 className="text-4xl font-black uppercase text-[#003366] tracking-tight">Bienestar e Información</h1>
            <div className="h-1.5 w-24 bg-[#0072CE] mx-auto rounded-full"></div>
            <p className="text-slate-400 font-bold uppercase text-[11px] tracking-[0.3em] pt-4">Vida Corporativa - Transportes Iceberg</p>
         </div>
 
-        {/* SECCIONES DE VIDEO (100% CONTENIDO ORIGINAL) */}
         <div className="space-y-32 mb-40">
            {videoNews.map((item, idx) => (
              <div key={idx} className="flex flex-col lg:flex-row gap-12 items-center">
@@ -71,7 +69,6 @@ export default function Noticias() {
            ))}
         </div>
 
-        {/* GALERÍA SOCIAL (16 IMÁGENES) */}
         <div className="bg-slate-50 -mx-6 px-6 py-32 border-y border-slate-100 mb-32">
            <div className="max-w-[1240px] mx-auto space-y-16">
               <div className="text-center space-y-4">
@@ -96,7 +93,6 @@ export default function Noticias() {
            </div>
         </div>
 
-        {/* PIE DE CERTIFICACIONES (RECREACIÓN 100%) */}
         <div className="mb-32">
            <div className="text-center space-y-8">
               <span className="text-[10px] font-black uppercase text-slate-300 tracking-[0.6em]">Certificados de Excelencia</span>

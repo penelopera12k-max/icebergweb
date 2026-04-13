@@ -15,7 +15,6 @@ export default function Politicas() {
     <main className="bg-white min-h-screen pt-40 pb-24">
       <div className="max-w-[1240px] mx-auto px-6">
         
-        {/* Title Section */}
         <div className="border-l-8 border-[#0072CE] pl-8 mb-20 text-[#003366]">
            <span className="text-[#0072CE] font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Seguridad Integral</span>
            <h1 className="text-4xl lg:text-7xl font-extrabold uppercase tracking-tight leading-none mb-6">
@@ -26,7 +25,6 @@ export default function Politicas() {
            </p>
         </div>
 
-        {/* Policies Grid: Professional Row Layout */}
         <div className="grid lg:grid-cols-2 gap-px bg-slate-100 border border-slate-100 shadow-sm mb-32">
            {complianceItems.map((item, i) => (
              <div key={i} className="bg-white p-12 lg:p-16 space-y-6">
@@ -36,7 +34,6 @@ export default function Politicas() {
            ))}
         </div>
 
-        {/* Certifications: Clean & Authoritative */}
         <div className="text-center space-y-16">
            <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-300">Certificaciones y Avales Vigentes</h4>
            <div className="flex flex-wrap justify-between items-center gap-12 grayscale opacity-50">

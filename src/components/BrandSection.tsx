@@ -13,7 +13,6 @@ const fleetImages = [
 export default function BrandSection() {
   return (
     <section className="bg-white border-t border-slate-50">
-      {/* 🚛 INFINITE FLEET SLIDER */}
       <div className="relative overflow-hidden py-10">
          <motion.div 
            className="flex gap-4"
@@ -28,7 +27,6 @@ export default function BrandSection() {
          </motion.div>
       </div>
 
-      {/* 📜 OFFICIAL CERTIFICATES STRIP */}
       <div className="flex justify-center py-10 border-t border-slate-50 bg-slate-50/30">
          <div className="relative w-full max-w-[800px] h-32 opacity-80">
             <Image src="/images/site/footer.jpg" alt="Certificados Iceberg" fill className="object-contain" />

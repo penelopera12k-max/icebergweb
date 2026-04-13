@@ -8,16 +8,13 @@ export default function Contactanos() {
     <main className="bg-slate-50 min-h-screen pt-48 pb-10 text-[#333333] font-sans">
       <div className="max-w-[1240px] mx-auto px-6">
         
-        {/* TITULO REFINADO Y CENTRADO */}
         <div className="mb-20 text-center">
            <h1 className="text-4xl font-extrabold uppercase tracking-tight text-[#001a4d]">Contáctenos</h1>
            <div className="h-1.5 w-24 bg-[#0072CE] mx-auto mt-6"></div>
         </div>
 
-        {/* CONTAINER MAESTRO INTEGRADO */}
         <div className="bg-white p-8 lg:p-12 rounded-2xl shadow-xl border border-slate-100 flex flex-col lg:flex-row gap-12 items-stretch mb-24 min-h-[600px]">
            
-           {/* LADO IZQUIERDO: FORMULARIO SÓLIDO */}
            <div className="lg:w-[45%] flex flex-col justify-between py-2">
               <div className="space-y-8">
                  <div className="space-y-2">
@@ -51,7 +48,6 @@ export default function Contactanos() {
               </button>
            </div>
 
-           {/* LADO DERECHO: MAPA CON MARCADOR OFICIAL */}
            <div className="lg:w-[55%] rounded-2xl overflow-hidden border border-slate-100 shadow-inner relative min-h-[400px]">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.223842602123!2d-74.14896!3d4.76828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f83c022cdf3cb%3A0x6b968c931ba54ba9!2sTRANSPORTE%20ICEBERG!5e0!3m2!1ses-419!2sco!4v1712849500000!5m2!1ses-419!2sco" 

@@ -27,7 +27,6 @@ export default function RootLayout({
         </PageTransition>
         <Footer />
         
-        {/* WhatsApp FAB Global - Professional Icon */}
         <a 
           href="https://wa.me/573228430132" 
           target="_blank"

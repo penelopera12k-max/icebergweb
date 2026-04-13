@@ -33,7 +33,6 @@ export default function ClientMarquee() {
           ))}
         </motion.div>
         
-        {/* Gradients for smooth edges */}
         <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-slate-50 to-transparent z-10" />
         <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-slate-50 to-transparent z-10" />
       </div>
