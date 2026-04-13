@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --brand-blue: #00AEEF;
+  --brand-navy: #003366;
+  --bg-white: #FFFFFF;
+  --text-dark: #333333;
+}
+
+@theme {
+  --color-brand: #00AEEF;
+  --color-navy: #003366;
+  --animate-shimmer: shimmer 2s infinite linear;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 80%
+  );
+  transform: rotate(30deg);
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.btn-shimmer:hover::after {
+  left: 100%;
+  opacity: 1;
+  transition: all 0.7s;
+}
+
+body {
+  background-color: var(--bg-white) !important;
+  color: var(--text-dark);
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600 !important;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, a, button, p, span, li, input, textarea {
+  font-weight: 600 !important;
+  letter-spacing: -0.01em;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #003366;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  color: #0072CE;
+}

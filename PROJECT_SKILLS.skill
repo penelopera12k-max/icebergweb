@@ -1,0 +1,56 @@
+# Skill: Iceberg Premium Development 🐋
+
+Esta habilidad permite al agente entender y extender el sistema de diseño "Arctic Velocity" y la arquitectura Full-Stack de Iceberg Colombia.
+
+## Contexto Técnico
+- **Framework:** Next.js 14+ (App Router).
+- **Styling:** Tailwind CSS + Vanilla CSS Variables.
+- **Iconografía:** Lucide-React.
+- **Animaciones:** Framer Motion (Transiciones de entrada y hover).
+
+## Instrucciones de Codificación
+
+### 1. Aplicación de Glassmorphism
+Para convertir cualquier contenedor en una tarjeta premium, aplica las siguientes clases de Tailwind o equivalentes en CSS:
+```tsx
+<div className="bg-white/[0.05] backdrop-blur-xl border border-white/10 rounded-2xl p-8 shadow-2xl">
+  {content}
+</div>
+```
+- **Prohibido:** Fondos opacos sólidos o bordes de colores vibrantes sin transparencia.
+
+### 2. Manejo de Colores (Tokens)
+- **Primario:** `#00AEEF` (Usar para acciones, acentos y luces).
+- **Secundario:** `#01D166` (Usar para sostenibilidad y éxitos).
+- **Fondo:** `#050A18` (Mantener siempre el entorno oscuro).
+- **Texto:** `#DDE2F6` (Gris azulado muy claro, nunca blanco puro #FFF).
+
+### 3. Patrones de Backend (API Routes)
+Todas las rutas de API deben manejar errores de forma consistente:
+```typescript
+try {
+  // Logic
+  return NextResponse.json({ success: true, data }, { status: 200 });
+} catch (error) {
+  return NextResponse.json({ error: 'Message' }, { status: 500 });
+}
+```
+
+### 4. Animaciones de Entrada
+Cada sección principal de la página debe estar envuelta en un `motion.section` de Framer Motion con el siguiente patrón:
+```tsx
+<motion.section 
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+>
+  ...
+</motion.section>
+```
+
+### 5. SEO y Metadatos
+Actualizar siempre `layout.tsx` con títulos descriptivos y meta-descripciones enfocadas en "Logística Sostenible Colombia" y "Seguridad BASC".
+
+---
+*Este Skill File garantiza que cualquier intervención de IA mantenga el estándar "Sensacional" exigido por el cliente.*
